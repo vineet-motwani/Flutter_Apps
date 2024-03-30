@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-// import 'package:shoe_store_app/global_variables.dart';
+import 'package:provider/provider.dart';
+import 'package:shoe_store_app/cart_provider.dart';
 
 class ProductDetailsPage extends StatefulWidget {
   final Map<String, Object> product;
@@ -13,7 +14,42 @@ class ProductDetailsPage extends StatefulWidget {
 }
 
 class _ProductDetailsPageState extends State<ProductDetailsPage> {
-  int selectedSize = 0;
+  int selectedSize = -1;
+
+  void onTap() {
+    if ((widget.product['sizes'] as List<int>).length == 0) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          duration: Duration(seconds: 1),
+          content: Text("This product is out of stock"),
+        ),
+      );
+      return;
+    }
+    if (selectedSize < 0 ||
+        selectedSize >= (widget.product['sizes'] as List<int>).length) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          duration: Duration(seconds: 1),
+          content: Text("Please select a size"),
+        ),
+      );
+      return;
+    }
+    Provider.of<CartProvider>(context, listen: false).addToCart({
+      'title': widget.product['title'],
+      'imageUrl': widget.product['imageUrl'],
+      'company': widget.product['company'],
+      'price': widget.product['price'],
+      'size': (widget.product['sizes'] as List<int>)[selectedSize],
+    });
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        duration: Duration(seconds: 1),
+        content: Text("Item added to cart"),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -87,7 +123,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                       Icons.shopping_cart,
                       color: Colors.white,
                     ),
-                    onPressed: () {},
+                    onPressed: onTap,
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Theme.of(context).primaryColorDark,
                       minimumSize: const Size(double.infinity, 50),
