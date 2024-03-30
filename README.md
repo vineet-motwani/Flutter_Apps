@@ -1,0 +1,3 @@
+## Bunch of my Flutter Applicaions...
+
+This repo consisits some of my flutter apps which range from front-end to state management, API fetching and other end-to-end solutions.
