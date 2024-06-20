@@ -20,3 +20,7 @@ samples, guidance on mobile development, and a full API reference.
 
 - Built it using Gemini Pro API. 
 - Used Bloc for state management, Lottie for animations and dio for network requests.
+
+![1](https://github.com/vineet-motwani/Flutter_Apps/assets/95994219/732a4e64-d552-4eb2-90e5-d51e2076464d)
+![2](https://github.com/vineet-motwani/Flutter_Apps/assets/95994219/c96232a7-1a9c-453f-9f48-3e6a6ff511a0)
+![3](https://github.com/vineet-motwani/Flutter_Apps/assets/95994219/0bdbc1a1-49cf-46bb-91a8-7e57246c70f5)
