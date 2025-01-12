@@ -22,5 +22,5 @@ samples, guidance on mobile development, and a full API reference.
 - Used Bloc for state management, Lottie for animations and dio for network requests.
 
 ![1](https://github.com/vineet-motwani/Flutter_Apps/assets/95994219/732a4e64-d552-4eb2-90e5-d51e2076464d)
-![2](https://github.com/vineet-motwani/Flutter_Apps/assets/95994219/c96232a7-1a9c-453f-9f48-3e6a6ff511a0)
-![3](https://github.com/vineet-motwani/Flutter_Apps/assets/95994219/0bdbc1a1-49cf-46bb-91a8-7e57246c70f5)
+![1 (1)](https://github.com/user-attachments/assets/b93ce6a6-131e-49fc-85f5-2f1bcc56247a)
+![2 (1)](https://github.com/user-attachments/assets/4e71f9ed-22a9-433f-bc0c-308f98a94768)
