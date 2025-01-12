@@ -6,7 +6,7 @@ A beautiful Flutter project which enables you to query questions about space. It
 - bloc and flutter_bloc for state management of the app.
 - lottie for Adobe animations effects.
 
-![space_pod](https://github.com/user-attachments/assets/9b2e9575-9fa5-45a2-aee0-b6207529c08b)
+![space_pod (1)](https://github.com/user-attachments/assets/b1bca3c0-6e0c-4579-8149-259e8fb91c57)
 
 ## Getting Started
 
